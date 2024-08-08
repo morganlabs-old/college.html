@@ -1,0 +1,36 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fefefe;
+  background-color: #121212;
+}
+
+.header {
+  padding-block: 1rem;
+  background-color: rgba(255, 255, 255, 10%);
+  margin-bottom: 0.5rem;
+}
+
+.container {
+  max-width: 80ch;
+  margin: 0 auto;
+}
+
+h1 {
+  line-height: 1.5em;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+.youtube_embed {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 0.5rem;
+}
+

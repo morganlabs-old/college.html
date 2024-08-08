@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+main.content {
+  max-width: 100ch;
+  min-height: 100vh;
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding-inline: 1rem;
+}
+
+@media (min-width: 1278px) {
+  main.content {
+    margin-top: 5.25rem;
+  }
+}
+/* Headings */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  display: block;
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  line-height: 1.3em;
+}
+
+h1, .h1 {
+  font-size: 4rem;
+}
+
+h2, .h2 {
+  font-size: 2.5rem;
+}
+
+h3, .h3 {
+  font-size: 2.25rem;
+}
+
+h4, .h4 {
+  font-size: 2rem;
+}
+
+h5, .h5 {
+  font-size: 1.5rem;
+}
+
+h6, .h6 {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 1104px) {
+  h1 {
+    font-size: clamp(3rem, 5vw, 3.5rem);
+  }
+}
+/* Body */
+body {
+  background-color: #E9EAF4;
+  color: #07091C;
+}
+
+p, button, div, ul, .kicker {
+  font-family: "Manrope", sans-serif;
+  font-weight: 475;
+  line-height: 1.5em;
+}
+
+button#close {
+  padding: 0;
+  line-height: 1em;
+}
+
+p {
+  padding-bottom: 0.5em;
+}
+
+a {
+  text-decoration: underline;
+  color: #3C43E6;
+  transition: font-weight 0.25s ease-in-out;
+}
+a:active, a:hover {
+  font-weight: 600;
+}
+
+/* Components */
+button, .cmp-btn {
+  display: inline-block;
+  background: none;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  padding: 12px 26px;
+  border-radius: 9999px;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+}
+button.primary, .cmp-btn.primary {
+  background-color: #3C43E6;
+  color: #E9EAF4;
+  box-shadow: 0 0 16px rgba(60, 67, 230, 0.5);
+  transition-property: box-shadow, transform;
+  transition: 0.25s ease-in-out;
+}
+button.primary:hover, .cmp-btn.primary:hover {
+  font-weight: 700;
+  box-shadow: 0 8px 16px rgba(60, 67, 230, 0.5);
+  transform: translateY(-4px);
+}
+button.secondary, .cmp-btn.secondary {
+  transition: border 0.25s ease-in-out;
+  box-sizing: border-box;
+  color: #E9EAF4;
+  transition-property: background-color, color;
+  transition: 0.25s ease-in-out;
+}
+button.secondary:hover, .cmp-btn.secondary:hover {
+  font-weight: 700;
+  background-color: #3C43E6;
+  color: #E9EAF4;
+}
+
+/* Misc. */
+::selection {
+  background-color: #3C43E6;
+  color: #E9EAF4;
+}
+
+::backdrop {
+  background-color: rgba(7, 9, 28, 0.75);
+  opacity: 0.75;
+}
+
+.disabled {
+  cursor: not-allowed !important;
+}
+
+.tags {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.tag {
+  background-color: rgba(7, 9, 28, 0.1);
+  border-radius: 9999px;
+  padding: 0.5rem 1rem;
+  font-weight: 550;
+}
+
+/*# sourceMappingURL=global.css.map */

@@ -1,0 +1,9 @@
+{
+  "name": "assignment2__venue_cymru",
+  "scripts": {
+    "build-css": "sass --watch src/scss:src/css"
+  },
+  "dependencies": {
+    "sass": "^1.69.5"
+  }
+}

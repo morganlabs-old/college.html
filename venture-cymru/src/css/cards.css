@@ -1,0 +1,102 @@
+.card {
+  position: relative;
+}
+.card .seperator {
+  display: block;
+  background-color: rgba(233, 234, 244, 0.25);
+  width: 3px;
+  height: 3px;
+  border-radius: 9999px;
+}
+.card .secondary {
+  font-weight: 500;
+}
+.card .small-info {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  gap: 0.25rem;
+}
+.card.hero {
+  aspect-ratio: 16/9;
+  border-radius: 10px;
+  color: #E9EAF4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 40px 30px;
+}
+.card.hero .action-row {
+  margin-top: 2rem;
+}
+.card.hero .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+.card.small {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.card.small *:not(.primary):not(:hover) {
+  color: #07091C;
+}
+.card.small .action-row {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+.card.small .seperator {
+  background-color: rgba(7, 9, 28, 0.25);
+}
+.card .image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  border-radius: 10px;
+}
+.card .gradient {
+  width: 100%;
+  height: 75%;
+  border-radius: 0 0 10px 10px;
+  aspect-ratio: 16/9;
+  position: absolute;
+  top: 25%;
+  left: 0;
+  background: #07091C;
+  background: linear-gradient(0deg, #07091c 0%, rgba(7, 9, 28, 0) 100%);
+  z-index: -1;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 800px) {
+  .card {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 1rem;
+  }
+  .card.hero {
+    height: 80vmax;
+    padding: 20px;
+  }
+  .card.hero .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+@media (max-width: 720px) {
+  .card-grid {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=cards.css.map */

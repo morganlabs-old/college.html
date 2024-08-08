@@ -1,0 +1,49 @@
+.footer {
+  background-color: #07091C;
+  color: #E9EAF4;
+  height: 72px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding-inline: 18px;
+  margin-top: 1rem;
+}
+
+.footer .logo {
+  height: 36px;
+  grid-column: 1;
+}
+
+.srccode, .socials {
+  font-family: "Manrope", sans-serif;
+  color: #E9EAF4;
+  font-size: 1.125rem;
+  opacity: 0.5;
+}
+
+.srccode {
+  justify-self: center;
+}
+
+.socials {
+  display: flex;
+  gap: 0.5rem;
+  justify-self: flex-end;
+}
+.socials a {
+  color: #E9EAF4;
+}
+
+@media (max-width: 1104px) {
+  .footer {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    margin-bottom: 6rem;
+  }
+  .footer .logo {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */

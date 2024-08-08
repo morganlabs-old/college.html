@@ -1,0 +1,49 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr; 
+  grid-template-rows: 64px;
+  background-color: #121212;
+  padding-inline: 0.5rem;
+}
+
+.nav__linkList {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.25s ease-in-out;
+
+  &:hover, &:active {
+    color: #67db86;
+  }
+}
+
+.nav__logo {
+  display: block;
+  background-color: red;
+  width: 128px;
+  height: 48px;
+
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: flex-start;
+  align-self: center;
+}
+
+.nav__login {
+  justify-self: flex-end;
+  align-self: center;
+}

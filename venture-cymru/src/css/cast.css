@@ -1,0 +1,33 @@
+.cast-member {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  text-align: center;
+}
+
+.member-image {
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  width: 128px;
+  height: 128px;
+  margin-bottom: 1rem;
+}
+
+.member-name {
+  font-size: 1.5rem;
+  font-weight: 650;
+}
+
+.character-name {
+  opacity: 50%;
+}
+
+.cast-list {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+}
+
+/*# sourceMappingURL=cast.css.map */

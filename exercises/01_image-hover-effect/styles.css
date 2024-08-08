@@ -1,0 +1,33 @@
+.imageContainer {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.imageContainer img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease; 
+    border-radius: 12px;
+}
+
+.imageContainer:hover img {
+    opacity: 0.75; 
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+}
+
+.imageContainer:hover .overlay {
+    opacity: 1;
+}
